@@ -6,7 +6,7 @@ I found this useful because of wanting to use a Jupyter notebook on my Desktop (
 
 The script does the following:
 
-* clones the repo into your working directory
+* clones this repo into your working directory
 * creates a specific python env for your current project, named as your HOSTNAME
 * creates a specific python kernel for that environment, named as your PROJECT
 * installs a set of python modules into the local environment, according to `python_installs.sh`
