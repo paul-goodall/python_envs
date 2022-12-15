@@ -6,7 +6,7 @@ my_project_name=${PWD##*/}          # to assign to a variable
 my_project_name=${my_project_name:-/}        # to correct for the case where PWD=/
 my_host=`hostname`
 my_host=${my_host/.local/}
-my_envs_dir="${my_wd}/envs"
+my_envs_dir="${my_wd}/python_envs"
 my_envs_git_dir="${my_envs_dir}/.git"
 my_host_env="${my_envs_dir}/${my_host}"
 my_python_installs="${my_envs_dir}/python_installs.sh"
