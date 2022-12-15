@@ -29,6 +29,8 @@ fi
 # Clone the python_envs repo:
 git clone https://github.com/paul-goodall/python_envs.git
 
+chmod -R 755 $my_envs_dir
+
 # remove the git part if it exists:
 if [ -d "$my_envs_git_dir" ];
 then
