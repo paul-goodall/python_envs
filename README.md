@@ -13,9 +13,13 @@ The script does the following:
 * You can then run Jupyter using `go_jupyter.sh` on any of your machines (provided that you have initialised that machine once with `python_envs` for you project)
 * Each machine will look for the PROJECT kernel on your environment (being none the wiser that it's actually using the local kernel)
 
-
 Disclaimer - only tested on Macs (Intel and M1) so far.
 
 ## Getting going:
+
+Run the following code from the directory of your latest python project.
+e.g:
+
+`cd /path/to/my_new_project`
 
 `wget -O - https://raw.githubusercontent.com/paul-goodall/python_envs/main/go_python_env.sh | bash`
