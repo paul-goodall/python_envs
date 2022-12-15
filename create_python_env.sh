@@ -17,21 +17,6 @@ echo $my_envs_dir
 echo $my_host_env
 echo $my_python_installs
 
-exit
-
-# Make the envs dir if it doesn't already exist:
-# It should alrady exist though due to:
-# git clone https://github.com/paul-goodall/python_envs.git
-# wget -O - https://raw.githubusercontent.com/<username>/<project>/<branch>/<path>/<file> | bash
-mkdir -p $my_envs_dir
-
-# remove the git part if it exists:
-if [ -d "$my_envs_git_dir" ];
-then
-  rm -rf $my_envs_git_dir
-fi
-
-
 # Get things up-to-date
 python3 -m pip install --upgrade pip
 python3 -m pip install setuptools wheel virtualenv --upgrade
