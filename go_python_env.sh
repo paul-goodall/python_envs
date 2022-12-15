@@ -20,12 +20,6 @@ echo $my_envs_dir
 echo $my_host_env
 echo $my_python_installs
 
-# remove the repo if it exists and clone it anew:
-if [ -d "$my_envs_dir" ];
-then
-  rm -rf $my_envs_dir
-fi
-
 # Clone the python_envs repo:
 git clone https://github.com/paul-goodall/python_envs.git
 
