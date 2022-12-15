@@ -1,8 +1,5 @@
 #!/usr/bin/env bash
 
-# Call me script:
-# wget -O - https://raw.githubusercontent.com/paul-goodall/python_envs/main/go_python_env.sh | bash
-
 my_wd=`pwd`
 my_project_name=${PWD##*/}              # to assign to a variable
 my_project_name=${my_project_name:-/}   # to correct for the case where PWD=/
@@ -20,16 +17,6 @@ echo $my_envs_dir
 echo $my_host_env
 echo $my_python_installs
 
-# Clone the python_envs repo:
-git clone https://github.com/paul-goodall/python_envs.git
-
-chmod -R 777 $my_envs_dir
-
-# remove the git part if it exists:
-if [ -d "$my_envs_git_dir" ];
-then
-  rm -rf $my_envs_git_dir
-fi
-
-# Run the my_create_python_envs script:
-$my_create_python_envs
+# activate the venv:
+source ${my_host_env}/bin/activate
+jupyter notebook & disown 
